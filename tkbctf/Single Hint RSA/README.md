@@ -52,6 +52,7 @@ hint1=54090058252804218553770902127609841718548664220987085177964232538368049188
 ```
 
 ## Solver 
+```
 
 from Crypto.Util.number import long_to_bytes, inverse
 from sympy import integer_nthroot
@@ -69,6 +70,7 @@ m = (n — hint1) // k
 # convert to bytes
 flag = long_to_bytes(m)
 print(flag.decode())
+```
 
 Flag: tkbctf{I_do_understand_the_risk_of_leaking_plaintext_by_giving_additional_information_in_the_RSA_and_really_want_to_provide_n%m}
 
